@@ -218,4 +218,44 @@ button, a {
     align-items: center;
 }
 
- 
+
+
+.menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin: 12px;
+    border: 1px solid white; 
+    padding: 1px 12px;
+}
+.menu .stick {
+    height: 5px;
+    width: 100%;
+    background-color: #232536;
+
+}
+
+.menu:hover {
+    transition:background-color 0.3s linear;
+    background-color: #EDC14A;
+}
+
+  /* mobile view */
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .top-nav.column-2 .button.button-white {
+        display: none;
+    }
+
+    .top-nav-wrapper {
+        display: none;
+    }
+    
+}
