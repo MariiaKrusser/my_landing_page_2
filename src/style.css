@@ -139,6 +139,12 @@ label {
     transition:background-color 0.3s linear;
     background-color: #EDC14A;
 }
+
+.button-hover-white:hover {
+    transition:background-color 0.3s linear;
+    background-color: #FFFFFF
+}
+
 button, a {
     cursor: pointer;
 }
@@ -176,20 +182,30 @@ button, a {
     margin-right: 15px;
 }
 .column-3 {
-    width: 33.33%;
+    width: calc(33.33%-30px);
     margin-left: 15px;
     margin-right: 15px;
 }
 .column-4 {
-    width: 25%;
+    width: calc(25%-30px);
     margin-left: 15px;
     margin-right: 15px;
+}
+
+
+@media screen  and (min-width:768px){
+    .column-2-lg {
+        width: calc(50% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 /* section header */
 
 
-.top-nav-links {
+.top-nav-links,
+.bottom-nav-links {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -197,23 +213,27 @@ button, a {
     margin: 0;
 }
 
-.top-nav-links a {
+.top-nav-links a,
+.bottom-nav-links a {
     text-decoration: none;
 }
 
-.top-nav-links li {
+.top-nav-links li,
+.bottom-nav-links li {
     margin-left: 12px;
     margin-right: 12px;
 }
 
-.top-nav {
+.top-nav,
+.bottom-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
 .top-nav-wrapper,
-.logo {
+.logo,
+.bottom-nav-wrapper {
     display: flex;
     align-items: center;
 }
@@ -240,7 +260,54 @@ button, a {
     background-color: #EDC14A;
 }
 
-  /* mobile view */
+  
+  /* footer styles */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+.input  input {
+    width: 100%;
+    border: 1px solid #4C4C4C;
+    background-color: transparent;
+    color: #6D6E76;
+    padding: 14px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 12px;
+}
+
+.input {
+    display: flex;
+    height: fit-content;
+}
+  
+
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 80px 64px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-top-line {
+    padding-bottom: 60px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* mobile view */
 
 @media screen and (max-width: 768px) {
 
@@ -258,4 +325,17 @@ button, a {
         display: none;
     }
     
+    .footer .logo {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    .bottom-nav {
+        justify-content: center;
+        text-align: center; 
+    }
+
+    .bottom-nav-links {
+        flex-direction: column;
+    }
 }
