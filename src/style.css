@@ -92,12 +92,13 @@ p {
     font-size: 16px;
     line-height: 20px;
     color: #232536;
+
 }
 
 label {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     color: #232536;
@@ -189,6 +190,14 @@ a {
 
 .text-yellow {
     color: #FFD050;
+}
+
+.text-medium-gray {
+    color: #6D6E76;
+}
+
+.text-dark-gray {
+    color: #4C4C4C
 }
 
 /* grid */
@@ -406,7 +415,76 @@ a {
     left: 0;
     z-index: -1;
     object-fit: cover;
+    width: 100%;
 }
+
+/* featured post */
+
+.featured-post button {
+    margin-left: 0;
+}
+
+.featured-post h2 {
+    margin-top: 128px;
+    margin-bottom: 32px;
+}
+
+.border-featured {
+    border: 1px solid #6D6E76;
+    padding: 32px;
+    margin-bottom: 128px;
+}
+
+.featured-img {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.featured-post h3 {
+    margin: 16px 0;
+}
+
+.featured-post p {
+    margin-top: 0;
+}
+
+.featured-post .p-featur {
+    margin-top: 32px;
+}
+
+.featured-post button {
+    margin-top: 32px;
+}
+
+.posts-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-link-a {
+    margin-top: 139px;
+}
+
+.featured-post li {
+    list-style: none;
+    padding-left: 32px;
+}
+
+.featured-post ul {
+    margin: 0;
+    padding: 0;
+}
+
+.featured-post h4 {
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    width: 60%;
+    margin: 8px;
+    margin-left: 0;
+}
+
+
 
 
 /* mobile view */
