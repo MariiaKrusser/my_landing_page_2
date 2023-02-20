@@ -253,13 +253,13 @@ a {
 }
 
 .column-3 {
-    width: calc(33.33%-30px);
+    width: calc(33.33% - 30px);
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .column-4 {
-    width: calc(25%-30px);
+    width: calc(25% - 30px);
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -272,7 +272,22 @@ a {
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .column-4-lg {
+        width: calc(25% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .column-4-xlg {
+        width: calc(25% - 30px);
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+}
+
 
 /* section header */
 
@@ -530,17 +545,23 @@ a {
 .shape {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     margin-top: 65px;
+    flex-wrap: nowrap;
 }
 
 .shape-yellow {
-    width: 843px;
+    width: 67%;
     height: 23px;
 }
 
 .shape-purple {
-    width: 282px;
+    width: 23%;
+    height: 23px;
+}
+
+.shape-white {
+    background-color: #FFFFFF;
+    width: 10%;
     height: 23px;
 }
 
@@ -549,17 +570,17 @@ a {
 }
 
 .text-read-more {
-    margin-bottom: 96px;
     margin-top: 0;
 }
 
 .our-mision {
-    padding-right: 110px;
+    padding-right: 65px;
+    padding-left: 32.5px;
 }
 
 .about-us {
     padding-left: 65px;
-    padding-right: 67px;
+    padding-right: 32.5px;
 }
 
 .about-us h2 {
@@ -572,6 +593,13 @@ a {
     margin-bottom: 0;
 }
 
+.about-text-wrapper {
+    padding-bottom: 96px;
+}
+
+*{
+    box-sizing: border-box;
+}
 
 /* mobile view */
 
@@ -697,6 +725,19 @@ a {
     .hide-for-mobile {
         display: none;
     }
+
+   .about .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-us,
+    .our-mision {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+   
+
     
 }
 
