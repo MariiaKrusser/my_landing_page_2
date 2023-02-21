@@ -156,7 +156,7 @@ label {
 }
 
 .bg-light-yellow {
-    background: #FBF6EA;
+    background-color: #FBF6EA;
 }
 
 /* buttons */
@@ -599,6 +599,71 @@ a {
 
 *{
     box-sizing: border-box;
+}
+
+/* Catagory section */
+
+.border {
+    border:1px solid #6D6E76;
+    padding: 32px;
+}
+
+.catagory h3 {
+    margin-bottom: 4px;
+}
+
+.catagory p {
+    margin: 0;
+}
+
+.catagory {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.choose-a-catagory {
+    display: flex;
+    justify-content: center;
+}
+
+.catagory h2 {
+    margin-top: 0;
+    margin-bottom: 33px;
+    
+}
+
+.bg-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s linear;
+}
+
+.cat-block {
+    background-color: white;
+    transition: background-color 0.3s linear;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.cat-block:hover {
+    background-color: #FFD050;;
+    transition: background-color 0.3s linear;
+}
+
+.cat-block:hover .bg-icon {
+    background-color: white;
+    transition: background-color 0.3s linear;
+}
+
+/* story section */
+
+.bg-story {
+    background: url("./image/man-in-black.png");
 }
 
 /* mobile view */
