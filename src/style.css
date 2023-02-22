@@ -663,8 +663,40 @@ a {
 /* story section */
 
 .bg-story {
-    background: url("./image/man-in-black.png");
+    background: url("./image/people.png");
+    width: 949px;
+    float: left;
 }
+
+.story-text {
+    background-color: #FFFFFF;
+    margin-top: 121px;
+    width: 706px;
+    padding: 80px;
+    float: right;
+    position: relative;
+    left: 331px;
+    
+}
+
+.story {
+    margin-bottom: 128px; 
+}
+
+.story button,
+.story h2 {
+    margin: 0;   
+}
+
+.story-p-1 {
+    margin-top: 0;
+    margin-bottom: 24px;  
+}
+
+.story-p-2 {
+    margin-bottom: 32px;
+}
+
 
 /* mobile view */
 
