@@ -664,19 +664,14 @@ a {
 
 .bg-story {
     background: url("./image/people.png");
-    width: 949px;
-    float: left;
+   
 }
 
 .story-text {
     background-color: #FFFFFF;
     margin-top: 121px;
-    width: 706px;
     padding: 80px;
-    float: right;
-    position: relative;
-    left: 331px;
-    
+    max-width: 706px;
 }
 
 .story {
@@ -697,6 +692,12 @@ a {
     margin-bottom: 32px;
 }
 
+.story .bg-story {
+    display: flex;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* mobile view */
 
@@ -833,8 +834,11 @@ a {
         padding-left: 20px;
         padding-right: 20px; 
     }
-   
 
+    .story-text {
+        margin-top: 80%;
+        padding: 0;
+    }
     
 }
 
