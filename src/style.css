@@ -28,6 +28,15 @@ body {
     color: #232536;
 }
 
+.body-2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
 .cap-1 {
     font-family: 'Inter';
     font-style: normal;
@@ -219,7 +228,15 @@ a {
 }
 
 .text-dark-gray {
-    color: #4C4C4C
+    color: #4C4C4C;
+} 
+
+.text-dark {
+    color: #232536;
+}
+
+.text-dark-blue {
+    color: #282938;
 }
 
 
@@ -651,7 +668,7 @@ a {
 }
 
 .cat-block:hover {
-    background-color: #FFD050;;
+    background-color: #FFD050;
     transition: background-color 0.3s linear;
 }
 
@@ -697,6 +714,72 @@ a {
     justify-content: flex-end;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* Autors section */
+
+.list-of-authors,
+.authors-networks,
+.avatar,
+.authors h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    border-radius: 100px;
+    margin-top: 40px;
+}
+
+.authors h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.authors-networks {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.authors p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.authors h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.authors-block {
+    background-color: #F4F4F4;
+    transition: background-color 0.3s linear;
+}
+
+.authors-block:hover {
+    background-color: #FBF6EA;
+    transition: background-color 0.3s linear;
+}
+
+.authors {
+    margin-bottom: 96px;
+}
+
+/* We are section*/
+
+.we-are .no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.we-are {
+    margin-bottom: 96px;
+}
+
+/* People say section */
+
+.ava {
+    border-radius: 100px;
 }
 
 /* mobile view */
@@ -840,6 +923,13 @@ a {
         padding: 0;
     }
     
+    .authors-block {
+        margin-top: 30px;
+    }
+
+    .we-are .no-wrap {
+        flex-wrap: wrap;
+    }
 }
 
 
