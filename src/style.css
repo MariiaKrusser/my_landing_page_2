@@ -900,11 +900,6 @@ figcaption {
     margin-bottom: 80px;
 }
 
-.man-in-white {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .blog-hero button {
     margin-left: 0;
     margin-top: 32px;
@@ -915,9 +910,17 @@ figcaption {
     margin-bottom: 0;
 }
 
-.blog-hero img {
-    width: 100%;
+.blog-hero-img {
+    display: flex;
+    flex-direction: row-reverse;
 }
+
+.blog-hero-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
 
 /* mobile view */
 
@@ -1103,9 +1106,7 @@ figcaption {
         margin-bottom: 100px;
     }
 
-     .blog-hero .man-in-white {
-        margin-top: 0;
-    }
+    
 
 }
 
@@ -1164,6 +1165,7 @@ figcaption {
         white-space: nowrap;
     }
 
+
 }
 
 /* Desktop view */
@@ -1173,4 +1175,9 @@ figcaption {
     .hide-for-desktop {
         display: none;
     }
+
+    .blog-hero-img img {
+        max-width: 515px;
+    }
+    
 }
