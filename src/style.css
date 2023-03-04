@@ -242,6 +242,10 @@ a {
     color: #282938;
 }
 
+.text-purple {
+    color: #592EA9
+}
+
 
 /* grid */
 
@@ -920,6 +924,83 @@ figcaption {
     object-fit: contain;
 }
 
+/* posts section */
+
+.posts {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+.post-h1 {
+    margin-left: 15px;
+    border-bottom: 1px solid #6D6E76;
+    width: 100%;
+}
+
+.post-h1 .h1 {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.posts-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.posts-img img {
+    margin-top: 64px;
+    margin-bottom: 0;
+}
+
+.posts-img {
+    width: min-content;
+}
+
+.posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.posts .p-1 {
+    margin-top: 119px;
+    margin-bottom: 20px;
+}
+
+.posts-block h2 {
+    margin: 0px;
+}
+
+.post-wrapper {
+    display: flex;
+}
+
+.posts-block {
+    width: 50%;
+}
+
+.pg-block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pg-hover {
+    margin-left: 17px;
+    margin-top: 70px;
+    transition:  0.3s linear;
+    
+}
+
+.pg-hover:hover {
+    transition:  0.3s linear;
+    
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #232536;
+}
 
 
 /* mobile view */
