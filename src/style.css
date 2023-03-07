@@ -146,6 +146,14 @@ label {
     color: #592EA9;
 }
 
+.display-text {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+}
+
 /* background colors */
 .bg-dark {
     background: #232536;
@@ -177,6 +185,10 @@ label {
 
 .bg-light-yellow {
     background-color: #FBF6EA;
+}
+
+.bg-transparant {
+    background-color: transparent;
 }
 
 /* buttons */
@@ -222,6 +234,11 @@ a {
 
 .button i {
     margin-left: 5px;
+}
+
+/* image */
+img {
+    width: 100%;
 }
 
 
@@ -301,6 +318,18 @@ a {
 @media screen and (min-width: 769px) {
     .column-2-lg {
         width: calc(50% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .column-2-60-lg {
+        width: calc(60% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .column-2-40-lg {
+        width: calc(40% - 30px);
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -998,15 +1027,82 @@ figcaption {
     line-height: 32px;
     color: #6D6E76;
     transform: scale(1);
-    text-decoration: none;
-    
-    
+    text-decoration: none;   
 }
 
 .pg-hover:hover {
     transition: all 0.3s linear;
     color: #232536;
     transform: scale(1.3);
+}
+
+/* ABOUT PAGE */
+
+/* content writers section */
+
+.writers-p {
+    display: flex;
+    align-items: center;
+}
+
+.writers-text {
+    background-color: #FFFFFF;
+    padding: 64px;
+    transform: translateY(50px);
+}
+
+.writers-text h1 {
+    margin: 0;
+}
+
+.padding-left-100 {
+    padding-left: 100px;
+}
+
+/* content image section */
+
+.block-yellow {
+    display: flex;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    flex-direction: column;
+}
+
+.yellow-box {
+    padding: 32px 32px;
+    text-align: center;
+}
+
+.box-color {
+    height: 23px;
+}
+
+.block-color .bg-purple {
+    width: 25%;
+}
+
+.block-color .bg-transparant {
+    width: 25%;
+}
+
+.block-color .bg-yellow {
+    width: 50%;
+} 
+
+.block-color {
+    display: flex;
+}
+
+
+.content {
+    position: relative;
+}
+
+.content-img img {
+    height: 444px;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -1207,7 +1303,22 @@ figcaption {
     .posts .p-1 {
         margin-top: 30px;
     }
+
+    .writers-text {
+        padding: 30px;
+    }
+
+    .padding-left-100 {
+        padding-left: 0;
+    }
     
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .yellow-box {
+
+    }
 
 }
 
@@ -1281,4 +1392,8 @@ figcaption {
         max-width: 515px;
     }
     
+    .content-wrapper {
+        position: absolute;
+        bottom: 0;
+    }
 }
