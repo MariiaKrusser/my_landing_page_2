@@ -1105,6 +1105,16 @@ figcaption {
     object-fit: cover;
 }
 
+/* mision text */
+
+.mision-text .bg-lavender {
+    padding: 112px 108px 48px 108px;
+}
+
+.mision-text h3 {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
 
 
 /* mobile view */
