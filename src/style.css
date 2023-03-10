@@ -238,7 +238,7 @@ a {
 
 /* image */
 img {
-    width: 100%;
+    width: 128px;
 }
 
 
@@ -1049,6 +1049,8 @@ figcaption {
     background-color: #FFFFFF;
     padding: 64px;
     transform: translateY(50px);
+    z-index: 1;
+    position: relative;
 }
 
 .writers-text h1 {
@@ -1064,13 +1066,11 @@ figcaption {
 .block-yellow {
     display: flex;
     width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
     flex-direction: column;
 }
 
 .yellow-box {
-    padding: 32px 32px;
+    padding: 32px 40px;
     text-align: center;
 }
 
@@ -1326,8 +1326,8 @@ figcaption {
         width: 100%;
     }
 
-    .yellow-box {
-
+    .mission-text .bg-lavender {
+        padding: 20px;
     }
 
 }
@@ -1406,4 +1406,18 @@ figcaption {
         position: absolute;
         bottom: 0;
     }
+
+    .content-img img {
+        height: 100%;
+    }
+
+    .block-yellow {
+        flex-direction: row;
+        padding-left: 0;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
 }
