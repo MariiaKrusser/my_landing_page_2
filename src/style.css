@@ -237,7 +237,7 @@ a {
 }
 
 /* image */
-img {
+.avatar img {
     width: 128px;
 }
 
@@ -1105,7 +1105,7 @@ figcaption {
     object-fit: cover;
 }
 
-/* mision text */
+/* mision text section */
 
 .mision-text .bg-lavender {
     padding: 112px 108px 48px 108px;
@@ -1116,6 +1116,34 @@ figcaption {
     margin-bottom: 0;
 }
 
+/* creative section */
+
+.creative {
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.creative h2,
+.creative p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.creative h4 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.creative-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.creative .bg-yellow {
+    width: 103px;
+    height: 116px;
+    border-top-left-radius: 40px;
+}
 
 /* mobile view */
 
@@ -1326,7 +1354,7 @@ figcaption {
         width: 100%;
     }
 
-    .mission-text .bg-lavender {
+    .padding-mob {
         padding: 20px;
     }
 
