@@ -1157,6 +1157,30 @@ figcaption {
     justify-content: center;
 }
 
+/* Why started */
+
+.why-started {
+    margin-bottom: 128px;
+}
+
+.blog-start h2,
+.blog-start p { 
+    margin: 0;
+}
+
+.blog-start h4 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.blog-start {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-left: 34px;
+}
+
 /* mobile view */
 
 @media screen and (max-width: 768px) {
@@ -1374,6 +1398,10 @@ figcaption {
         padding-bottom: 30px;
     }
 
+    .blog-start {
+        margin-left: 0;
+    }
+
 }
 
 
@@ -1434,7 +1462,6 @@ figcaption {
     .creative-text {
         width: 90%;
     }
-
     
 
 
@@ -1477,5 +1504,9 @@ figcaption {
 @media screen and (min-width: 1024px) {
     .creative-text {
         max-width: 519px;
+    }
+
+    .blog-start {
+        max-width: 511px;
     }
 }
