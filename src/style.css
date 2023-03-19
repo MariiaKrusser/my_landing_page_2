@@ -123,7 +123,6 @@ p {
     font-size: 16px;
     line-height: 28px;
     color: #232536;
-
 }
 
 label {
@@ -1181,6 +1180,41 @@ figcaption {
     margin-left: 34px;
 }
 
+.why-started .bg-purple {
+    width: 74px;
+    height: 74px;
+    border-radius: 40px;
+    position: absolute;
+    bottom: -30px;
+    left: 107px;
+}
+
+.img-start {
+    position: relative;
+}
+
+
+/* CONTACT PAGE */
+
+/* bisness hero section */
+
+.bisness {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.bisness h1 {
+    margin: 0;
+}
+
+.bisness-p {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+
+
 /* mobile view */
 
 @media screen and (max-width: 768px) {
@@ -1402,7 +1436,18 @@ figcaption {
         margin-left: 0;
     }
 
+    .blog-start h2 {
+        margin-top: 50px;
+    }
+    
+    .bisness {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
 }
+
 
 
 /* tablet view */
