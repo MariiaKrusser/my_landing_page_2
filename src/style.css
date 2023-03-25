@@ -341,6 +341,18 @@ img {
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .column-3-4-lg {
+        width: calc(75% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .column-1-4-lg {
+        width: calc(25% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -373,6 +385,7 @@ img {
 .top-nav-links a,
 .bottom-nav-links a {
     text-decoration: none;
+    transition: color 0.3s linear;
 }
 
 .top-nav-links li,
@@ -395,7 +408,46 @@ img {
     align-items: center;
 }
 
+.top-nav-sublinks {
+    position: absolute;
+    padding: 5px;
+    margin: 0;
+    background-color: #FFD050;
+    list-style: none;
+    z-index: -1;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
 
+.top-nav-links > li {
+    position: relative;
+}
+
+.top-nav-links li:hover .top-nav-sublinks {
+    z-index: 2;
+    transition: all 0.5s linear;
+    opacity: 1;
+}
+
+.top-nav-links li:hover i {
+    transform: rotate(-180deg);
+    transition: all 0.3s linear;
+}
+
+.top-nav-links > li:hover > a {
+    color: #FFD050;
+    transition: color 0.3s linear;
+}
+
+.top-nav-links li i {
+    transition: all 0.3s linear;
+}
+
+
+
+.top-nav-sublinks a {
+    color: #282938;
+}
 
 .menu {
     display: none;
@@ -1194,23 +1246,90 @@ figcaption {
 }
 
 
-/* CONTACT PAGE */
+/* Category PAGE */
 
-/* bisness hero section */
+/* business hero section */
 
-.bisness {
+.business {
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
 }
 
-.bisness h1 {
+.business h1 {
     margin: 0;
 }
 
-.bisness-p {
+.business-p {
     margin-top: 32px;
     margin-bottom: 0;
+}
+
+/* business tags section */
+
+.business-tags {
+    margin-top: 122px;
+    margin-bottom: 122px;
+}
+
+.img-business {
+    width: auto;
+}
+
+.blog-block {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.blog-block-text {
+    margin-left: 32px;
+}
+
+.border-contact {
+   border: 1.5px solid #C1C1C3;
+   padding: 24px;
+   display: flex;
+   align-items: center;
+}
+
+.border-contact h3 {
+    margin: 0 0 0 16px;
+}
+
+.hug-hug {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.box-hug {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.tags-hug {
+    border: 1.5px solid #C1C1C3;
+    border-radius: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 5px;
+}
+
+.blog-block-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -1440,10 +1559,17 @@ figcaption {
         margin-top: 50px;
     }
     
-    .bisness {
+    .business {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .blog-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 
     
 }
