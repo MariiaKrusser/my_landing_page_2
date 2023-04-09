@@ -1354,12 +1354,6 @@ figcaption {
 
 /* Section support */
 
-.contact-support {
-    margin-left: 336px;
-    margin-right: 336px;
-    max-width: 768px;
-}
-
 .p-sup-2 {
     border-bottom: 1px solid #FFFFFF;
     padding-bottom: 16px;
@@ -1369,8 +1363,28 @@ figcaption {
 
 .support p {
     opacity: 0.6;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
+.support .bg-purple {
+    max-width: 768px;
+    padding: 48px 49px 48px 49px;
+}
+
+.support {
+    justify-content: center;
+    display: flex;
+}
+
+.contact-support h5,
+.contact-support p {
+    margin: 0;
+}
+
+.margin-top-16 {
+    margin-top: 16px;
+}
 
 
 /* mobile view */
