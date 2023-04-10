@@ -1343,8 +1343,8 @@ figcaption {
 
 .center-text {
     text-align: center;
-    padding-left: 336px;
-    padding-right: 336px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 .center-text h1 {
@@ -1352,7 +1352,13 @@ figcaption {
     margin-bottom: 24px;
 }
 
-/* Section support */
+/* section support */
+
+.purple-block-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 768px;
+}
 
 .p-sup-2 {
     border-bottom: 1px solid #FFFFFF;
@@ -1372,11 +1378,6 @@ figcaption {
     padding: 48px 49px 48px 49px;
 }
 
-.support {
-    justify-content: center;
-    display: flex;
-}
-
 .contact-support h5,
 .contact-support p {
     margin: 0;
@@ -1384,6 +1385,10 @@ figcaption {
 
 .margin-top-16 {
     margin-top: 16px;
+}
+
+.margin-0 {
+    margin: 0;
 }
 
 
