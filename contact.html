@@ -162,29 +162,37 @@
 
         <div class="message">
             <div class="container">
-                <div class="input-wrapper">
-                    <div class="row form-message">
-                        <form class="input-form">
+                <div class="row">
+                    <div class="column-1">
+                        <form class="input-form form-message">
                             <div class="input">
                                 <input type="Full Name" placeholder="Full Name">
                             </div>
                             <div class="input">
                                 <input type="Your Email" placeholder="Your Email">
                             </div>
-                            <div class="input">
-                                <input type="Query Related" placeholder="Query Related"><i class="fa-solid fa-chevron-down"></i>
-                                
+                            <div class="input input-select">
+                                <label class="sr-only" for="pet-select">Query Related</label>
+                                <select name="pets" id="pet-select">
+                                    <option value="">Query Related</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="hamster">Hamster</option>
+                                    <option value="parrot">Parrot</option>
+                                    <option value="spider">Spider</option>
+                                    <option value="goldfish">Goldfish</option>
+                                </select>  
                             </div>
                             <div class="input">
-                                <input class="helper-height" type="Message" placeholder="Message">
+                                <textarea name="Message" id="Message" placeholder="Message" rows="5"></textarea>
+                                <label class="sr-only" for="Message">Message field</label>
                             </div>
-                            <div class="subscribe-form-button">
+                            <div class="input">
                                 <button class="button button-hover-white">Send Message</button>
                             </div>
                         </form>
                     </div>
-                </div>
-                
+                </div>                
             </div>
         </div>
 

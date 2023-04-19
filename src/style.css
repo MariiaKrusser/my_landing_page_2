@@ -28,6 +28,15 @@ body {
     justify-content: flex-start!important;
 }
 
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 /* typography */
 
 body {
@@ -470,17 +479,11 @@ img {
     background-color: #EDC14A;
 }
 
+/* form */
 
-/* footer styles */
-
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-
-
-.input input {
+.input input,
+.input select,
+.input textarea {
     width: 100%;
     border: 1px solid #4C4C4C;
     background-color: transparent;
@@ -492,9 +495,51 @@ img {
     margin: 12px;
 }
 
+.input textarea::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.input input,
+.input select {
+    height: 58px;
+}
+
 .input {
     display: flex;
     height: fit-content;
+}
+
+.input-select:after {
+    pointer-events: none;
+    content: "\f078";
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 54px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    right: 1px;
+    top: 14px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+}
+
+.input-select {
+    position: relative;
+}
+
+/* footer styles */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -1414,7 +1459,6 @@ figcaption {
 
 .message .input {
     width: 100%;
-    display: block;
 }
 
 .message button {
@@ -1423,6 +1467,26 @@ figcaption {
 
 .helper-height {
     height: 144px;
+}
+
+.input-query {
+    max-width: 768px; 
+}
+
+.input select {
+    width: 100%;
+}
+
+.input-form .input input,
+.input-form .input select,
+.input-form .input .button,
+.input-form .input textarea {
+    margin: 12px 0;
+}
+
+.message .column-1 {
+    display: flex;
+    justify-content: center;
 }
 
 /* mobile view */
