@@ -1489,6 +1489,13 @@ figcaption {
     justify-content: center;
 }
 
+/* Privacy policy section */
+
+.updated {
+    opacity: 0.6;
+}
+
+
 /* mobile view */
 
 @media screen and (max-width: 768px) {
@@ -1724,6 +1731,10 @@ figcaption {
         flex-direction: column;
     }
 
+    .support .bg-purple {
+        padding: 48px 0;
+    }
+
     
 
     
@@ -1788,6 +1799,7 @@ figcaption {
     .creative-text {
         width: 90%;
     }
+
     
 
 
