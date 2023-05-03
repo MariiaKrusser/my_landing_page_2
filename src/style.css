@@ -1499,8 +1499,10 @@ figcaption {
 .policy {
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .privacy-policy h1 {
     margin: 0 0 4px 0;
@@ -1508,17 +1510,23 @@ figcaption {
 
 /* Big lorem text section */
 
-.big-lorem-text {
+.article-section {
     margin-top: 128px;
     margin-bottom: 112px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.biggest-text {
     max-width: 768px;
 }
 
-.big-lorem-text h1 {
+.article-section h1 {
     margin: 0 0 32px 0;
 }
 
-.big-lorem-text h2 {
+.article-section h2 {
     margin: 32px 0 24px 0;
 }
 
